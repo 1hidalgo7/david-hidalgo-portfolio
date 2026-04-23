@@ -6,31 +6,47 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+# Dependencies and build output
 node_modules
 dist
 dist-ssr
-*.local
-.vercel
 coverage
+.nyc_output
+*.tsbuildinfo
+
+# Environment and local config
 .env
 .env.*
+*.local
+
+# Deploy and caches
+.vercel
 .cache
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Temporary/system files
 *.tmp
 *.temp
 Thumbs.db
 Desktop.ini
-Stardom_Complete.zip
-MENÚ DE ODD RITUAL.mp4
-gsap-skills/
+.DS_Store
 
-# Editor directories and files
+# Editor/IDE
 .vscode/*
 !.vscode/extensions.json
+.vscode-test
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+.eslintcache
+
+# Local non-project assets
+Stardom_Complete.zip
+MENÚ DE ODD RITUAL.mp4
+gsap-skills/
