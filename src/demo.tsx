@@ -168,7 +168,7 @@ const MinimalistHeroDemo = () => {
     },
     {
       title: 'Contabilidad y Administración',
-      description: 'Labores de Administración y Contabilidad con la empresa Alianza Cítricos SL',
+      description: 'Labores de Administración y Contabilidad con la empresa CPD Agrícolas Gourmet',
       year: '2021 - 2023',
       link: '#experiencia-laboral',
       image: 'https://res.cloudinary.com/dpr1qh8kr/image/upload/v1776896055/alianza_jhmxkk.jpg',
