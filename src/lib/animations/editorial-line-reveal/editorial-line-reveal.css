@@ -1,0 +1,84 @@
+.elr-section {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  color: #111111;
+}
+
+.elr-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 56rem;
+  padding: clamp(5.5rem, 12vw, 9.5rem) 1.5rem;
+  background: transparent;
+}
+
+.elr-eyebrow {
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: clamp(0.82rem, 1.2vw, 0.92rem);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.elr-text {
+  margin: 2rem auto 0;
+  max-width: 44rem;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 7vw, 2.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.024em;
+}
+
+.elr-line-mask {
+  position: relative;
+  overflow: hidden;
+}
+
+.elr-line-wipe {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  will-change: transform, opacity;
+}
+
+.elr-links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.elr-link {
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--foreground);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--foreground) 20%, transparent);
+}
+
+.elr-link:hover {
+  border-bottom-color: color-mix(in srgb, var(--foreground) 55%, transparent);
+}
+
+@media (min-width: 768px) {
+  .elr-text {
+    font-size: clamp(2.4rem, 4.2vw, 4rem);
+    line-height: 0.96;
+  }
+}
+
+@media (min-width: 768px) {
+  .elr-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
